@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 3001",
-    "build": "next build",
+    "build": "next build --webpack",
+    "ci:build": "npx vercel@54.9.1 build --standalone --debug",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
     "check-types": "next typegen && tsc --noEmit"
