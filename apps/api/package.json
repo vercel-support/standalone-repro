@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "type": "module",
+  "dependencies": {
+    "hono": "^4.12.23"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci:build": "npx vercel@54.9.1 build --standalone --debug"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
